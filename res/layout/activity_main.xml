@@ -51,26 +51,12 @@
             android:onClick="process20Percent" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <TextView
+        android:id="@+id/tvTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" >
-
-        <TextView
-            android:id="@+id/tvTipLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tip_label" />
-
-        <TextView
-            android:id="@+id/tvTip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/tip_left_margin"
-            android:text="@string/bill_total_empty" />
-
-    </LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:text="@string/empty_string" />
 
 </RelativeLayout>

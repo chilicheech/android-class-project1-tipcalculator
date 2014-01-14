@@ -31,10 +31,10 @@ public class MainActivity extends Activity {
     	try {
     		double billTotal = Double.parseDouble(etBillTotal.getText().toString());
         	double tip = billTotal * percentage / 100;
-        	String tipString = String.format("$%.2f", tip);
+        	String tipString = String.format(getString(R.string.tip_label) + " $%.2f", tip);
         	tvTip.setText(tipString);
     	} catch (NumberFormatException e) {
-    		tvTip.setText(R.string.invalid_number_warning);
+    		tvTip.setText(R.string.empty_string);
     		Toast.makeText(getApplicationContext(), R.string.invalid_number_warning, Toast.LENGTH_SHORT).show();
     	}
     }
